@@ -383,9 +383,3 @@ document.querySelectorAll(".view-cert-btn").forEach((btn) => {
     if (url) window.open(url, "_blank");
   });
 });
-
-// Mobile Theme Toggle
-const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
-if (mobileThemeToggle) {
-  mobileThemeToggle.addEventListener("click", toggleTheme);
-}
