@@ -1226,3 +1226,27 @@ section {
 .view-cert-btn {
   margin-top: 1rem; /* increase top margin to push button further from the text */
 }
+/* hide mobile toggle by default */
+.mobile-theme-toggle {
+  display: none;
+  background: none;
+  margin-right: 5vw;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* show on small screens, hide the desktop one inside the menu */
+@media (max-width: 768px) {
+  .mobile-theme-toggle {
+    display: block;
+    margin-left: auto;
+    margin-right: 5vw;
+  }
+  /* hide the original toggle in the collapsed menu */
+  .nav-menu .theme-toggle {
+    display: none;
+  }
+}
